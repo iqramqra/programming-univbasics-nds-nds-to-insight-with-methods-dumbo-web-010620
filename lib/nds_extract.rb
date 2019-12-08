@@ -9,8 +9,8 @@ def directors_totals(nds)
   result = {}
   nil
   nds.each do |n|
-    result[n[:name]]= gross_for_director
-  end
+    result[n[:name]]= gross_for_director(n)
+    end
     return result
 end
 
