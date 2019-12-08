@@ -13,5 +13,14 @@ end
 # Find a way to accumulate the :worldwide_grosses and return that Integer
 # using director_data as input
 def gross_for_director(director_data)
-  
+  grand_total =0
+  row_index = 0
+  while row_index<director_data.length
+  do
+    colum_index = 0
+    while colum_index < director_data.length do
+      grand_total += total_value_of_spinner(vm,row_index,colum_index)
+      colum_index +=1
+    end
+      row_index +=1
 end
