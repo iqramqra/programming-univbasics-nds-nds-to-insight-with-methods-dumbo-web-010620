@@ -10,6 +10,8 @@ def directors_totals(nds)
   nil
   nds.each do |n|
     result[n[:name]]= gross_for_director
+  end
+    return result
 end
 
 # Find a way to accumulate the :worldwide_grosses and return that Integer
